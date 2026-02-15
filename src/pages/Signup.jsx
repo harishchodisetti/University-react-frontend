@@ -40,7 +40,7 @@ function Signup() {
       alert(data.message || "Registration Successful ✅");
       navigate("/login");
     } else {
-      const error = await response.text();   // 👈 NOT json()
+      const error = await response.text();
       alert(error);
     }
 
